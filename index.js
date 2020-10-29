@@ -36,18 +36,22 @@ function romanConverter() {
     let numbers = romanInput.value.toUpperCase()
     // let numbers = [...romanInput.value.toUpperCase()]
     const newlist={ CM:900, CD:400, XC:90, XL:40, IX:9, IV:4}
-   for(let k in newlist){
-       let index = numbers.search(k)
-       console.log("romanConverter -> index ", index )
-       
-       if(index > -1){
-           convertedRoman += newlist[k]
-           numbers = numbers.replace(k,'')
-          
-       }
-   }
+    for(let k in newlist){
+        let index = numbers.search(k)
+      
+        if(index > -1){
+            
+            convertedRoman = convertedRoman + newlist[k]
+            
+            resultRoman.innerHTML = convertedRoman
+            
+            numbers = numbers.replace(k,'')
+           
+            
+        }
+    }
     
-    for(let i = 0;i< numbers.length;i++){
+    for(let i = 0;i < numbers.length;i++){
         for(let j in numberList){
             if(numbers[i] === j){
                 convertedRoman += numberList[j]
