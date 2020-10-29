@@ -1,0 +1,46 @@
+html{
+    font-size: 60%;
+}
+
+#container{
+    background-position: center;
+    height: 70vh;
+    background-image:url('./images/crop.jpeg') ;
+    background-repeat:no-repeat ;
+    
+ 
+}
+header{
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 2rem;
+    color:azure
+}
+
+main{
+    text-align: center;
+    
+}
+main input {
+width: 10%;
+padding: 10px;
+font-size: small;
+border-radius: 10px;
+}
+main button{
+    display:block;
+    width: 100px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    background-color:aliceblue;
+    border-color: black;
+    border-radius: 10px;
+    
+}
+p{
+    font-size:35px;
+    color: crimson;
+    font-weight: bold;
+    
+}
