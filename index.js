@@ -1,8 +1,10 @@
 
 const numberInput = document.querySelector("#number");
 const romanInput = document.querySelector("#roman");
+
 const numberButton = document.querySelector("#btnNum");
 const romanButton = document.querySelector("#btnRoman");
+
 const resultNum = document.querySelector('#resultNum');
 const resultRoman = document.querySelector('#resultRoman');
 
@@ -21,6 +23,7 @@ function numberConverter() {
     let value = ''
     let num = numberInput.value
     for (let i in numberList){
+        
        value = Math.floor(num / numberList[i])
         num = num % numberList[i]
         convertedNum += i.repeat(value) 
@@ -46,6 +49,8 @@ function romanConverter() {
             resultRoman.innerHTML = convertedRoman
             
             numbers = numbers.replace(k,'')
+            console.log("romanConverter -> numbers", numbers)
+            
            
             
         }
